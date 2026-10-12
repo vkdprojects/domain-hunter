@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/codeatlasdev/domain-hunter/internal/pricing"
+	"github.com/vkdprojects/domain-hunter/internal/pricing"
 )
 
 func HandlePrices(w http.ResponseWriter, r *http.Request) {

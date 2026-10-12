@@ -1,6 +1,6 @@
 package scanner
 
-import "github.com/codeatlasdev/domain-hunter/internal/registry"
+import "github.com/vkdprojects/domain-hunter/internal/registry"
 
 // Providers is kept for backward compatibility — populated from registry cache.
 var Providers = map[string]string{

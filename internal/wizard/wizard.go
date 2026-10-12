@@ -7,9 +7,9 @@ import (
 
 	"github.com/charmbracelet/huh"
 
-	"github.com/codeatlasdev/domain-hunter/internal/export"
-	"github.com/codeatlasdev/domain-hunter/internal/registry"
-	"github.com/codeatlasdev/domain-hunter/internal/scanner"
+	"github.com/vkdprojects/domain-hunter/internal/export"
+	"github.com/vkdprojects/domain-hunter/internal/registry"
+	"github.com/vkdprojects/domain-hunter/internal/scanner"
 )
 
 type Config struct {

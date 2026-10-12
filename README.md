@@ -7,9 +7,9 @@
 The fastest bulk domain availability checker. 1,437 TLDs. 19 registrars. Price comparison. One command.
 
 [![Go](https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev)
-[![Release](https://img.shields.io/github/v/release/codeatlasdev/domain-hunter?style=flat-square&color=2563EB)](https://github.com/codeatlasdev/domain-hunter/releases)
+[![Release](https://img.shields.io/github/v/release/vkdprojects/domain-hunter?style=flat-square&color=2563EB)](https://github.com/vkdprojects/domain-hunter/releases)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/codeatlasdev/domain-hunter/ci.yml?style=flat-square&label=CI)](https://github.com/codeatlasdev/domain-hunter/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/vkdprojects/domain-hunter/ci.yml?style=flat-square&label=CI)](https://github.com/vkdprojects/domain-hunter/actions)
 
 <img src="demo.gif" alt="domh demo" width="100%" />
 
@@ -36,13 +36,13 @@ The fastest bulk domain availability checker. 1,437 TLDs. 19 registrars. Price c
 
 ```bash
 # Go (recommended)
-go install github.com/codeatlasdev/domain-hunter@latest
+go install github.com/vkdprojects/domain-hunter@latest
 
 # macOS / Linux
-curl -fsSL https://raw.githubusercontent.com/codeatlasdev/domain-hunter/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/vkdprojects/domain-hunter/main/install.sh | sh
 
 # Or download from releases
-# → https://github.com/codeatlasdev/domain-hunter/releases
+# → https://github.com/vkdprojects/domain-hunter/releases
 ```
 
 ---
@@ -218,7 +218,7 @@ domh ships as an MCP (Model Context Protocol) server, letting AI agents check do
 
 ```bash
 # Install the standalone MCP binary
-go install github.com/codeatlasdev/domain-hunter/cmd/mcp@latest
+go install github.com/vkdprojects/domain-hunter/cmd/mcp@latest
 
 # Or use the built-in subcommand (same binary)
 domh mcp
@@ -269,4 +269,4 @@ PRs welcome. Run `go build ./...` and `go test ./...` before submitting.
 
 ## License
 
-MIT — [CodeAtlas](https://codeatlas.com.br)
+MIT — see [LICENSE](./LICENSE). Maintained by [VKD](https://github.com/vkdprojects).

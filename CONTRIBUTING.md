@@ -3,7 +3,7 @@
 PRs welcome. Here's how:
 
 ```bash
-git clone https://github.com/codeatlasdev/domain-hunter
+git clone https://github.com/vkdprojects/domain-hunter
 cd domain-hunter
 go build ./...
 go test ./...

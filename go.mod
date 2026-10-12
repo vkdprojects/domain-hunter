@@ -1,4 +1,4 @@
-module github.com/codeatlasdev/domain-hunter
+module github.com/vkdprojects/domain-hunter
 
 go 1.26.3
 

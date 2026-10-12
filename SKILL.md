@@ -30,7 +30,7 @@ Bulk domain availability checker with Brazilian market support, price comparison
 ### MCP (recommended for agent use)
 
 ```bash
-go install github.com/codeatlasdev/domain-hunter@latest
+go install github.com/vkdprojects/domain-hunter@latest
 ```
 
 Add to your MCP config (`~/.config/omp/mcp.json` or equivalent):
@@ -49,7 +49,7 @@ Add to your MCP config (`~/.config/omp/mcp.json` or equivalent):
 ### CLI (for direct use or piping)
 
 ```bash
-go install github.com/codeatlasdev/domain-hunter@latest
+go install github.com/vkdprojects/domain-hunter@latest
 ```
 
 ## MCP Tools

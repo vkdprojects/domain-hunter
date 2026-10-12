@@ -24,14 +24,14 @@ import (
 	"github.com/mark3labs/mcp-go/mcp"
 	mcpserver "github.com/mark3labs/mcp-go/server"
 
-	"github.com/codeatlasdev/domain-hunter/internal/export"
-	"github.com/codeatlasdev/domain-hunter/internal/presets"
-	"github.com/codeatlasdev/domain-hunter/internal/pricing"
-	"github.com/codeatlasdev/domain-hunter/internal/registry"
-	"github.com/codeatlasdev/domain-hunter/internal/scanner"
-	"github.com/codeatlasdev/domain-hunter/internal/trademark"
-	"github.com/codeatlasdev/domain-hunter/internal/tui"
-	"github.com/codeatlasdev/domain-hunter/internal/wizard"
+	"github.com/vkdprojects/domain-hunter/internal/export"
+	"github.com/vkdprojects/domain-hunter/internal/presets"
+	"github.com/vkdprojects/domain-hunter/internal/pricing"
+	"github.com/vkdprojects/domain-hunter/internal/registry"
+	"github.com/vkdprojects/domain-hunter/internal/scanner"
+	"github.com/vkdprojects/domain-hunter/internal/trademark"
+	"github.com/vkdprojects/domain-hunter/internal/tui"
+	"github.com/vkdprojects/domain-hunter/internal/wizard"
 )
 
 var (
@@ -786,7 +786,7 @@ func runUpdate() {
 	err := spinner.New().
 		Title("Checking for updates...").
 		Action(func() {
-			latest, found, detectErr = selfupdate.DetectLatest(context.Background(), selfupdate.ParseSlug("codeatlasdev/domain-hunter"))
+			latest, found, detectErr = selfupdate.DetectLatest(context.Background(), selfupdate.ParseSlug("vkdprojects/domain-hunter"))
 		}).
 		Run()
 	if err != nil {
@@ -1408,9 +1408,9 @@ func skillsUpdateLock(lockPath, _ string) {
 	hash := fmt.Sprintf("%x", sha1bytes([]byte(skillMD)))
 
 	lock.Skills["domain-hunter"] = skillEntry{
-		Source:          "codeatlasdev/domain-hunter",
+		Source:          "vkdprojects/domain-hunter",
 		SourceType:      "github",
-		SourceURL:       "https://github.com/codeatlasdev/domain-hunter.git",
+		SourceURL:       "https://github.com/vkdprojects/domain-hunter.git",
 		SkillPath:       "SKILL.md",
 		SkillFolderHash: hash,
 		InstalledAt:     installedAt,

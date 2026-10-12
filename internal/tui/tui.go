@@ -10,8 +10,8 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/codeatlasdev/domain-hunter/internal/pricing"
-	"github.com/codeatlasdev/domain-hunter/internal/scanner"
+	"github.com/vkdprojects/domain-hunter/internal/pricing"
+	"github.com/vkdprojects/domain-hunter/internal/scanner"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/codeatlasdev/domain-hunter/internal/presets"
+	"github.com/vkdprojects/domain-hunter/internal/presets"
 )
 
 func HandlePresets(w http.ResponseWriter, r *http.Request) {

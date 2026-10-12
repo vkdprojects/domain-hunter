@@ -97,7 +97,7 @@ const SECTIONS = [
     desc: 'AI agent integration via Model Context Protocol.',
     gif: '/docs/mcp.gif',
     commands: [
-      { label: 'Install MCP server', code: 'go install github.com/codeatlasdev/domain-hunter/cmd/mcp@latest' },
+      { label: 'Install MCP server', code: 'go install github.com/vkdprojects/domain-hunter/cmd/mcp@latest' },
       { label: 'Or use built-in subcommand', code: 'domh mcp' },
     ],
   },
@@ -120,11 +120,11 @@ export function Docs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-2">
             <div className="text-sm font-bold text-slate-600">Go (recommended)</div>
-            <CopyBlock code="go install github.com/codeatlasdev/domain-hunter@latest" />
+            <CopyBlock code="go install github.com/vkdprojects/domain-hunter@latest" />
           </div>
           <div className="space-y-2">
             <div className="text-sm font-bold text-slate-600">macOS / Linux</div>
-            <CopyBlock code="curl -fsSL https://raw.githubusercontent.com/codeatlasdev/domain-hunter/main/install.sh | sh" />
+            <CopyBlock code="curl -fsSL https://raw.githubusercontent.com/vkdprojects/domain-hunter/main/install.sh | sh" />
           </div>
         </div>
         <div className="space-y-2">

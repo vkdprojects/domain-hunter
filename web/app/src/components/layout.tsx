@@ -31,7 +31,7 @@ export function Layout() {
           </nav>
         </div>
         <a
-          href="https://github.com/codeatlasdev/domain-hunter"
+          href="https://github.com/vkdprojects/domain-hunter"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 border-[2.5px] border-border px-3 py-1.5 font-bold text-sm shadow-brutal-sm hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal-md transition-all"
@@ -70,8 +70,8 @@ export function Layout() {
           <div>
             <div className="font-bold mb-2">Resources</div>
             <div className="space-y-1 text-slate-500">
-              <a href="https://github.com/codeatlasdev/domain-hunter" className="block hover:text-slate-800">GitHub</a>
-              <a href="https://github.com/codeatlasdev/domain-hunter/releases" className="block hover:text-slate-800">Releases</a>
+              <a href="https://github.com/vkdprojects/domain-hunter" className="block hover:text-slate-800">GitHub</a>
+              <a href="https://github.com/vkdprojects/domain-hunter/releases" className="block hover:text-slate-800">Releases</a>
             </div>
           </div>
           <div>

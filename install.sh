@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-REPO="codeatlasdev/domain-hunter"
+REPO="vkdprojects/domain-hunter"
 BINARY="domh"
 INSTALL_DIR="/usr/local/bin"
 

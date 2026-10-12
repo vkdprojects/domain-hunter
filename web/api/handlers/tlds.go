@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/codeatlasdev/domain-hunter/internal/registry"
+	"github.com/vkdprojects/domain-hunter/internal/registry"
 )
 
 type tldEntry struct {

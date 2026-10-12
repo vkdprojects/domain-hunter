@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/codeatlasdev/domain-hunter/internal/pricing"
+	"github.com/vkdprojects/domain-hunter/internal/pricing"
 )
 
 type DomainInfo struct {

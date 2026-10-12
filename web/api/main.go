@@ -9,8 +9,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/codeatlasdev/domain-hunter/web/api/handlers"
-	"github.com/codeatlasdev/domain-hunter/web/api/middleware"
+	"github.com/vkdprojects/domain-hunter/web/api/handlers"
+	"github.com/vkdprojects/domain-hunter/web/api/middleware"
 )
 
 func main() {

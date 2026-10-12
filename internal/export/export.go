@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/codeatlasdev/domain-hunter/internal/scanner"
+	"github.com/vkdprojects/domain-hunter/internal/scanner"
 )
 
 type Format string

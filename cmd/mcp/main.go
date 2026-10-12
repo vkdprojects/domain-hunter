@@ -9,9 +9,9 @@ import (
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 
-	"github.com/codeatlasdev/domain-hunter/internal/presets"
-	"github.com/codeatlasdev/domain-hunter/internal/pricing"
-	"github.com/codeatlasdev/domain-hunter/internal/scanner"
+	"github.com/vkdprojects/domain-hunter/internal/presets"
+	"github.com/vkdprojects/domain-hunter/internal/pricing"
+	"github.com/vkdprojects/domain-hunter/internal/scanner"
 )
 
 func main() {
