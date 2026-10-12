@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <!-- Diamond shape - the ◆ symbol that represents domh -->
-  <rect x="4" y="4" width="24" height="24" rx="2" fill="#2563EB"/>
-  <path d="M16 6L26 16L16 26L6 16Z" fill="#EFF6FF"/>
-  <path d="M16 10L22 16L16 22L10 16Z" fill="#2563EB"/>
-</svg>
