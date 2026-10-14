@@ -779,14 +779,23 @@ func runTLDs(args []string) {
 }
 
 func runUpdate() {
+	// Every release ships goreleaser's checksums.txt; refuse any binary whose SHA-256 doesn't match it.
+	updater, err := selfupdate.NewUpdater(selfupdate.Config{
+		Validator: &selfupdate.ChecksumValidator{UniqueFilename: "checksums.txt"},
+	})
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Could not create updater: %v\n", err)
+		os.Exit(1)
+	}
+
 	var latest *selfupdate.Release
 	var found bool
 	var detectErr error
 
-	err := spinner.New().
+	err = spinner.New().
 		Title("Checking for updates...").
 		Action(func() {
-			latest, found, detectErr = selfupdate.DetectLatest(context.Background(), selfupdate.ParseSlug("vkdprojects/domain-hunter"))
+			latest, found, detectErr = updater.DetectLatest(context.Background(), selfupdate.ParseSlug("vkdprojects/domain-hunter"))
 		}).
 		Run()
 	if err != nil {
@@ -837,7 +846,7 @@ func runUpdate() {
 	err = spinner.New().
 		Title(fmt.Sprintf("Updating to %s...", latest.Version())).
 		Action(func() {
-			updateErr = selfupdate.DefaultUpdater().UpdateTo(context.Background(), latest, exe)
+			updateErr = updater.UpdateTo(context.Background(), latest, exe)
 		}).
 		Run()
 	if err != nil {
